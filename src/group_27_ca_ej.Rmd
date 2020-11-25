@@ -23,5 +23,7 @@ ces <- read.csv(here("data","ces3_demographics.csv")) %>%
 ggplot(data=ces, aes(x=white,y= ces_3_0_score))+ 
   geom_hex()+
   labs(y="CES 3.0 pollution burden score", 
-       x="% white population per census tract")
+       x="% white population per census tract")+
+  scale_fill_gradient(low = "darkorchid4", high = "magenta")+
+  theme_minimal()
 ```
