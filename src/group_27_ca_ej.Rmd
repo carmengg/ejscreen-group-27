@@ -1,0 +1,21 @@
+---
+title: "Group 27 CA pollution burden"
+author: "Carmen Galaz-García, Alison Sells"
+date: "11/25/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+
+```{r}
+ces <- read.csv(here("data","ces3_demographics.csv")) %>% 
+  clean_names()
+```
+
