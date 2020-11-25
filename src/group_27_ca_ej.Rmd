@@ -29,3 +29,4 @@ ggplot(data=ces, aes(x=white,y= ces_3_0_score))+
   theme_minimal()
   
 ```
+As shown above, there is an inverse relationship between the percent of white residents per census tract and the CalEnviroScreen (CES) Pollution Burden score. 
